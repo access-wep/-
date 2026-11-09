@@ -379,10 +379,10 @@ create trigger update_notifications_updated_at before update on notifications
 
 -- Ø¥Ø¹Ø¯Ø§Ø¯Ø§Øª Ø§Ù„Ø¥Ø¯Ø§Ø±Ø© Ø§Ù„Ø§ÙØªØ±Ø§Ø¶ÙŠØ©
 insert into admin_settings (key, value, description) values
-  ('monthly_price', '29.99', 'Ø³Ø¹Ø± Ø§Ù„Ø®Ø·Ø© Ø§Ù„Ø´Ù‡Ø±ÙŠØ© Ø¨Ø§Ù„Ø¯ÙˆÙ„Ø§Ø±'),
-  ('yearly_price', '299.99', 'Ø³Ø¹Ø± Ø§Ù„Ø®Ø·Ø© Ø§Ù„Ø³Ù†ÙˆÙŠØ© Ø¨Ø§Ù„Ø¯ÙˆÙ„Ø§Ø±'),
-  ('site_name', 'Ø¬Ø¯ÙˆÙ„ ØªÙ†Ø¸ÙŠÙ…', 'Ø§Ø³Ù… Ø§Ù„Ù…ÙˆÙ‚Ø¹'),
-  ('support_email', 'support@example.com', 'Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¯Ø¹Ù… Ø§Ù„ÙÙ†ÙŠ');
+  ('monthly_price', '"29.99"'::jsonb, 'Ø³Ø¹Ø± Ø§Ù„Ø®Ø·Ø© Ø§Ù„Ø´Ù‡Ø±ÙŠØ© Ø¨Ø§Ù„Ø¯ÙˆÙ„Ø§Ø±'),
+  ('yearly_price', '"299.99"'::jsonb, 'Ø³Ø¹Ø± Ø§Ù„Ø®Ø·Ø© Ø§Ù„Ø³Ù†ÙˆÙŠØ© Ø¨Ø§Ù„Ø¯ÙˆÙ„Ø§Ø±'),
+  ('site_name', '"Ø¬Ø¯ÙˆÙ„ ØªÙ†Ø¸ÙŠÙ…"'::jsonb, 'Ø§Ø³Ù… Ø§Ù„Ù…ÙˆÙ‚Ø¹'),
+  ('support_email', '"support@example.com"'::jsonb, 'Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¯Ø¹Ù… Ø§Ù„ÙÙ†ÙŠ');
 
 -- Ø±Ù…ÙˆØ² Ø®ØµÙ… ØªØ¬Ø±ÙŠØ¨ÙŠØ©
 insert into discount_codes (code, description, discount_type, discount_value, max_uses, valid_from, applicable_plans) values
