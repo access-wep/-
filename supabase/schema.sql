@@ -404,3 +404,4 @@ create index if not exists idx_tasks_due_date on tasks(due_date);
 create index if not exists idx_tasks_completed on tasks(completed);
 create index if not exists idx_notifications_user_id on notifications(user_id);
 create index if not exists idx_notifications_is_read on notifications(is_read);
+
