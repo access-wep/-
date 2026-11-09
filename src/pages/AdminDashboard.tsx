@@ -26,7 +26,8 @@ export default function AdminDashboard({ user, onBack }: AdminDashboardProps) {
       valid_from: '2026-01-01',
       valid_until: null,
       is_active: true,
-      created_at: '2026-01-01'
+      created_at: '2026-01-01',
+      updated_at: '2026-01-01'
     },
     {
       id: '2',
@@ -38,7 +39,8 @@ export default function AdminDashboard({ user, onBack }: AdminDashboardProps) {
       valid_from: '2026-11-01',
       valid_until: '2026-12-31',
       is_active: true,
-      created_at: '2026-11-01'
+      created_at: '2026-11-01',
+      updated_at: '2026-11-01'
     }
   ])
   const [newCode, setNewCode] = useState('')
