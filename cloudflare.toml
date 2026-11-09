@@ -1,0 +1,12 @@
+# Cloudflare Pages Configuration
+# See: https://developers.cloudflare.com/pages/functions/
+
+[build]
+command = "npm run build"
+output_dir = "dist"
+root_dir = "."
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
