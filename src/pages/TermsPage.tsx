@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Check, ScrollText } from 'lucide-react'
 
 interface TermsPageProps {
