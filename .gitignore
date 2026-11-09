@@ -1,0 +1,31 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# production
+/dist
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.log
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
