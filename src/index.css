@@ -1,35 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
-  --radius-sm: 0.25rem;
-  --radius-md: 0.375rem;
-  --radius-lg: 0.5rem;
-  --radius-xl: 0.75rem;
-  --color-background: #ffffff;
-  --color-foreground: #0f172a;
-  --color-muted: #f1f5f9;
-  --color-muted-foreground: #64748b;
-  --color-border: #e2e8f0;
-  --color-input: #e2e8f0;
-  --color-primary: #0f172a;
-  --color-primary-foreground: #f8fafc;
-  --color-secondary: #f1f5f9;
-  --color-secondary-foreground: #0f172a;
-  --color-destructive: #dc2626;
-  --color-destructive-foreground: #f8fafc;
-  --color-accent: #f1f5f9;
-  --color-accent-foreground: #0f172a;
-  --color-success: #16a34a;
-  --color-warning: #d97706;
-  --color-info: #2563eb;
+  --font-sans: "Tajawal", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; height: 100%; }
-#root { height: 100%; }
-body { font-family: var(--font-sans); background: var(--color-background); color: var(--color-foreground); line-height: 1.6; }
-::-webkit-scrollbar { width: 5px; height: 5px; }
-::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
-::selection { background: rgba(15, 23, 42, 0.1); }
+html, body { margin: 0; padding: 0; height: 100%; direction: rtl; text-align: right; }
+body { font-family: var(--font-sans); background-color: #ffffff; color: #0f172a; line-height: 1.6; }
