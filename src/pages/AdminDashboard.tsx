@@ -90,6 +90,7 @@ export default function AdminDashboard({ user, onBack }: AdminDashboardProps) {
 
   function handleAddDiscount() {
     if (!newCode || newDiscount <= 0) return
+    const now = new Date().toISOString().split('T')[0]
     const newDiscountObj: DiscountCode = {
       id: Date.now().toString(),
       code: newCode.toUpperCase(),
@@ -97,10 +98,11 @@ export default function AdminDashboard({ user, onBack }: AdminDashboardProps) {
       discount_value: newDiscount,
       max_uses: null,
       times_used: 0,
-      valid_from: new Date().toISOString().split('T')[0],
+      valid_from: now,
       valid_until: null,
       is_active: true,
-      created_at: new Date().toISOString().split('T')[0]
+      created_at: now,
+      updated_at: now
     }
     setDiscounts([...discounts, newDiscountObj])
     setNewCode('')
